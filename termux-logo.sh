@@ -17,7 +17,7 @@ read name
  exec 3<> bash.bashrc
  # Let's print some text to fd 3
 echo " PS1='\033[1;93m
-\a┏\a━Myanmar━┓\033[1;92m
+\a┏━━━\aMM━━━┓\033[1;92m
 \a┃\a━━\a🌟\a━━\a┃\a\033[1;91m
 \a┗\a━━\a━━\a━━\a┛'
 figlet $name | lolcat -a -d 20
