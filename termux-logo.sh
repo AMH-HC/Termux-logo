@@ -11,14 +11,16 @@ rm bash.bashrc
 rm motd
 #Name
 sh logo.sh
-# Open file descriptor (fd) 3 for read/write on a bash file.
  exec 3<> bash.bashrc
  # Let's print some text to fd 3
 echo " PS1='\033[1;93m
 \a┏━━\aMM━━┓\033[1;92m
 \a┃\a━━\a🌟\a━━\a┃\a\033[1;91m
 \a┗\a━━\a━━\a━━\a┛'
-figlet $name | lolcat -a -d 20
+
+
+lolcat -a -d 20
+
 shopt -s autocd
 shopt -s cdspell
 shopt -s checkhash
