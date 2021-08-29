@@ -14,9 +14,10 @@ sh logo.sh
  exec 3<> bash.bashrc
  # Let's print some text to fd 3
 echo " PS1='\033[1;93m
-\a┏━━\aMM━━┓\033[1;92m
+\a┏━━━━━━┓\033[1;92m
 \a┃\a━━\a🌟\a━━\a┃\a\033[1;91m
-\a┗\a━━\a━━\a━━\a┛'
+\a┗\a━━\a━━\a━━\a┛\a\033[1;93m
+\aMyanmar'
 
 
 lolcat -a -d 20
